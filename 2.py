@@ -1,6 +1,5 @@
-a = 0
-f=0
-while a!=-1:
-    a=int(input())
-    f+=1
-print(f)
+from math import sqrt
+n = int(input('Введите положительное число,большее 2:'))
+while n > 2:
+    n = sqrt(n)
+    print("%.3f" % n)
