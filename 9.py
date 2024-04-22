@@ -1,9 +1,8 @@
-a = int(input('Введите верхнюю границу диапазона:'))
-for i in range(2, a + 1):
-    b = False
-    for j in range(2, i):
-        if i % j == 0:
-            b = True
-            break
-    if not b:
-        print(i)
+N = int(input("Введите наибольшее количество точек на одной плитке кости домино: "))
+summa = 0
+
+for i in range(N+1):
+    for j in range(i+1):
+        summa += i + j
+
+print("Суммарное количество точек на всех костях домино:", summa)
