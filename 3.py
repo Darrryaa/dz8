@@ -1,8 +1,6 @@
-a=1
-b=0
-c=0
-while a!=0:
-    a=int(input())
-    c+=1
-    b+=a
-print((b-1)//(c-1))
+N = int(input('Введите кол-во упаковок эскимо:'))
+min = 1000
+for i in range(2,1000):
+    if N%i==0 and N%i<i and i<min:
+        min=i
+        print(i)
