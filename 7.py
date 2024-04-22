@@ -1,4 +1,4 @@
-a = str(input('Введите целое число:'))
-while a.isdigit() != True:
-    a = input('Ошибка. Попробуйте еще раз. Введите число: ')
-print('Введено целое число:',a)
+SEND = int(input('Введите четырехзначное число:'))
+MORE = int(input('Введите четырехзначное число:'))
+MONEY = SEND + MORE
+print(SEND, MORE, MONEY)
