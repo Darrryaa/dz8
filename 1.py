@@ -1,7 +1,3 @@
-a=0
-m=0
-while a!= -1:
-    a=int(input())
-    if a>m:
-        m = a
-print(m)
+N, d, R = map(int, input().split())
+l = 2*R*N + 2*d
+print(l)
